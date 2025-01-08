@@ -1,0 +1,212 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+/* Header */
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+}
+
+/* Header Container */
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adds space between image and text */
+    justify-content: flex-start; /* Aligns content to the left */
+}
+
+/* Profile Picture */
+header .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    flex-shrink: 0; /* Ensures the image doesn't shrink */
+}
+
+/* Text Section */
+header .header-text {
+    text-align: left; /* Aligns text to the left */
+}
+
+header .header-text h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header .header-text p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+section h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin: 5px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Gallery */
+#gallery div {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #0576a7;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+footer .social-icons a {
+    color: white;
+    font-size: 1.5em;
+    transition: transform 0.3s;
+}
+
+footer .social-icons a:hover {
+    transform: scale(1.2);
+    background-color: blue;
+    border-radius: 9px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #gallery div {
+        flex-direction: column;
+        align-items: center;
+    }
+}
